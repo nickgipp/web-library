@@ -1,7 +1,7 @@
 import { Header } from '~/components/Header/Header';
 import { SideNav } from '~/components/SideNav/SideNav';
 import { Сontainer } from '~/components/Сontainer/Сontainer';
-import { BooksList } from '~/page/BooksList/BooksList';
+import { BooksList } from '~/pages/BooksList/BooksList';
 import styles from './App.module.scss';
 
 function App() {
