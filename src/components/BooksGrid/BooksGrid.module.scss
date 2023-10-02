@@ -1,0 +1,15 @@
+@import '/src/app/styles/index.scss';
+
+.bookGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+
+@include mediaMax($screenMd) {
+    .bookGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

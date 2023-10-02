@@ -1,0 +1,10 @@
+@import '/src/app/styles/index.scss';
+
+.сontainer {
+    max-width: $screenEx;
+    margin: 0 auto;
+
+    @include mediaMax($screenEx) {
+        margin: 0 $mainMargin;
+    }
+}

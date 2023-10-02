@@ -1,0 +1,25 @@
+@import '/src/app/styles/index.scss';
+
+.header {
+    background-color: $secondaryColor;
+    color: $submainTextColor;
+    width: 100%;
+    margin: 0 $submainMargin;
+
+    .userIcon {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $mainPadding 0;
+}

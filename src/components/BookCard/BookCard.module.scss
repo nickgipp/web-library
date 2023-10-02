@@ -1,0 +1,41 @@
+@import '/src/app/styles/index.scss';
+
+.bookCard {
+  padding: $submainPadding;
+  text-align: center;
+  transition: $hoverAnimationTime ease-in-out;
+  border-radius: $mainBorderRadius;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+  }
+
+  h3 {
+    margin-top: $submainMargin;
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    background-color: $secondaryColor;
+  }
+}
+
+@include mediaMax($screenMd) {
+  .bookCard {
+    h3 {
+      font-size: 1.2em;
+    }
+    
+    p {
+      font-size: 1em;
+    }
+  }
+}

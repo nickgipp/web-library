@@ -1,0 +1,29 @@
+@import '/src/app/styles/index.scss';
+
+.sideNav {
+    background-color: $primaryColor;
+    border-radius: 0 0 $mainBorderRadius $mainBorderRadius;
+    height: 500px;
+    padding: $mainPadding;
+    min-width: 280px;
+    margin-right: $mainMargin;
+    margin-left: -$mainMargin;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 5px;
+        text-align: start;
+    }
+}
+
+@include mediaMax($screenMd) {
+    .sideNav {
+        display: none;
+    }
+}
